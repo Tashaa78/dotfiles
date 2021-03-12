@@ -121,3 +121,7 @@ if [ -d ~/.ssh ]; then
 	eval $(ssh-agent -s) > /dev/null
 	ssh-add ~/.ssh/id_rsa 2> /dev/null
 fi
+#ellipsis
+if [ -d ~/.ellipsis/bin ]; then 
+	export PATH=$PATH:~/.ellipsis/bin
+fi
